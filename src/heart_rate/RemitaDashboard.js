@@ -177,7 +177,7 @@ class RemitaDashboard extends React.Component {
 
 
       <br />
-      <Paper2 title="Dashboard 1000" num={this.state.num1} sum={this.state.sum1} /><br />
+      <Paper2 title="Dashboard Updated 12:48 PM" num={this.state.num1} sum={this.state.sum1} /><br />
       <br />
 
 
