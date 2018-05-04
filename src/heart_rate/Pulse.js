@@ -7,7 +7,7 @@ var faker = require('faker');
 const PulseFilter = (props) => (
     <Filter {...props}>
         <TextInput label="Search" source="q" alwaysOn />
-        <ReferenceInput label="User" source="userId" reference="users" allowEmpty>
+        <ReferenceInput label="User" source="uid" reference="users" allowEmpty>
             <SelectInput optionText="name" />
         </ReferenceInput>
     </Filter>
@@ -17,10 +17,10 @@ export const PulseList = (props) => (
     <List {...props} filters={<PulseFilter />}>
         <Datagrid>
             <TextField source="id" />
-            <ReferenceField label="User" source="userId" reference="users">
+            <ReferenceField label="User" source="uid" reference="users">
                 <TextField source="name" />
             </ReferenceField>
-            <TextField source="timestamp" />
+            <TextField source="time" />
             <TextField source="value" />
             <EditButton />
         </Datagrid>
@@ -35,10 +35,10 @@ export const PulseEdit = (props) => (
     <Edit title={<PulseTitle />} {...props}>
         <SimpleForm>
             <DisabledInput source="id" />
-            <ReferenceInput label="User" source="userId" reference="users">
+            <ReferenceInput label="User" source="uid" reference="users">
                 <SelectInput optionText="name" />
             </ReferenceInput>
-            <TextInput source="timestamp" />
+            <TextInput source="time" />
             <TextInput source="value" />
         </SimpleForm>
     </Edit>
@@ -47,14 +47,14 @@ export const PulseEdit = (props) => (
 export const PulseCreate = (props) => (
     <Create {...props}>
         <SimpleForm>
-            <ReferenceInput label="User" source="userId" reference="users">
+            <ReferenceInput label="User" source="uid" reference="users">
                 <SelectInput optionText="name" />
             </ReferenceInput>
 
-            <TextInput source="timestamp" placeholder="hello" />
+            <TextInput source="time" />
             <TextInput source="value" />
 
-            
+
 
         </SimpleForm>
     </Create>
