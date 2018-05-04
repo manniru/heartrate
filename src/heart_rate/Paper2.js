@@ -48,15 +48,15 @@ class Paper2 extends React.Component {
         </Typography>
 
         <Typography type="title" align="center">
-        Remita Generated: {this.props.num} (N{this.props.sum})
+        No of Users: {this.props.num} (N{this.props.sum})
         </Typography>
 
         <Typography type="subheading" style={{}} align="center">
-          Remita Approved: 3,870 (N4,783,900)
+        No of Pulses: 3,870 (N4,783,900)
         </Typography>
 
         <Typography type="body1" style={{ color: 'white' }} align="center">
-          Remita Dashboard
+        Dashboard Dashboard
         </Typography>
       
       </Paper>

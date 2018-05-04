@@ -170,26 +170,21 @@ class RemitaDashboard extends React.Component {
 
     return (
       <div>
-      
+
       <Grid container>
 
       </Grid>
 
 
       <br />
-      <br />
-      <Paper2 title="Remita 1000" num={this.state.num1} sum={this.state.sum1} /><br />
-      <Paper2 title="Remita 2000" num={this.state.num2} sum={this.state.sum2} /><br />
-      <Paper2 title="Remita 3000" num={this.state.num3} sum={this.state.sum3} /><br />
-      <Paper2 title="Remita 4000" num={this.state.num4} sum={this.state.sum4} /><br />
-      <Paper2 title="Remita 5000" num={this.state.num5} sum={this.state.sum5} /><br />
+      <Paper2 title="Dashboard 1000" num={this.state.num1} sum={this.state.sum1} /><br />
       <br />
 
 
 
       <Paper elevation={10} style={{ width: 300, height: 150, margin: 10, backgroundColor: 'green'}}>
           <Typography type="headline" gutterBottom align="center">
-            Online Application
+            Online Users
       </Typography>
           <Typography type="title" gutterBottom>
             Title

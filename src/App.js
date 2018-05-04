@@ -8,6 +8,7 @@ import Dashboard from './Dashboard';
 import { PostList, PostEdit, PostCreate } from './posts';
 import { PulseList, PulseEdit, PulseCreate } from './heart_rate/Pulse'
 import { UserList } from './users';
+import authProvider from './authProvider';
 
 var dataProvider = jsonServerProvider('http://localhost:3001');
 //var dataProvider = jsonServerProvider('http://35.232.234.165:3001');
@@ -16,6 +17,7 @@ var dataProvider = jsonServerProvider('http://localhost:3001');
 
 const App = () => (
     <Admin
+    authProvider={authProvider}
     dataProvider={dataProvider}
     title="Cloud-Based Realtime Heart Rate Monitoring System"
     dashboard={Dashboard}
